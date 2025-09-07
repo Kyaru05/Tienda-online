@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GYS PARFUMVAP</title>
+  <link rel="stylesheet" href="Assent/syle.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">  
+</head>
+<body>
+  <header class="navbar">
+    <img src="LOGO.jpeg" alt="" width="100px">
+  </header>
+  <nav class="menu">
+    <a href="index.html" class="vinculo">INICIO</a>
+    <a href="fragancias.html">FRAGANCIAS</a>
+    <a href="destacados.html">DESTACADOS</a>
+    <a href="sobrenosotros.html">SOBRE NOSOTROS</a>
+  </nav>
+  <div class="eslogan">
+    <img src="Khamrah Qahwa.jpeg" alt="" width="200px" class="imagen1">
+    <div class="lattafa">
+      <h1>LATTAFA</h1>
+      <p>Khamrah Qahwa</p>
+      <div class="precios">
+        <img src="efectivo.png" alt="" width="40px">
+        <p>$100000</p>
+        <img src="tarjetas.png" alt="" width="40px">
+        <p>$120000</p>
+      </div>
+      <label for="cantidad">Cantidad: </label>
+      <br>
+      <input type="number" name="cantidad" id="cantidad1" class="cantidad" min="1" value="1">
+      <button class="agregar" onclick="agregar(1)">Agregar</button>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="miModal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <h2>Carrito</h2>
+      <div id="carrito"></div>
+      <button onclick="cerrar()">Cerrar</button>
+    </div>
+  </div>
+
+  <!-- Tu JS separado -->
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
